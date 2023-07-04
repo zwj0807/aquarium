@@ -4,6 +4,24 @@
 	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationBarBackgroundColor":"#fff"
+				// #ifdef MP-WEIXIN
+				// "navigationStyle": "custom"
+				// #endif
+			}
+		},
+		{
+			"path": "pages/login/loginphone",
+			"style": {
+				"navigationBarTitleText": "登录",//手机验证码密码登录
+				"navigationBarBackgroundColor":"#fff"
+				// "navigationStyle": "custom"
+			}
+		},
+		{
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "首页",

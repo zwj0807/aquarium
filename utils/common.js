@@ -171,9 +171,11 @@ export const getSystemInfo = () => {
 	let menuButtonBottom = menuButtonInfo.bottom * scaleFactor //rpx
 	// 胶囊左边界的坐标
 	let menuButtonLeft = menuButtonInfo.left * scaleFactor //rpx
-
+	//小程序应用图标
+	
 	// 微信小程序中导航栏高度 = 胶囊高度 + (顶部距离 - 状态栏高度) * 2
 	navHeight = menuButtonHeight + (menuButtonTop - statusBarHeight) * 2
+	
 	// #endif
 
 	let info = {}
