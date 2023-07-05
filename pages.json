@@ -71,9 +71,9 @@
 	},{
 		"root": "my", //子包的根目录
 		"pages": [{ //这里的配置路径和pages里的一样
-				"path": "index", //配置页面路径，这里要注意，因为root已经选中了文件夹，所以我们只要填写文件名就好
+				"path": "personalInfo", //配置页面路径，这里要注意，因为root已经选中了文件夹，所以我们只要填写文件名就好
 				"style": {
-					"navigationBarTitleText": "tabar2",
+					"navigationBarTitleText": "个人资料",
 					"enablePullDownRefresh": false
 				}
 			}

@@ -6,6 +6,9 @@
 		onLaunch: function() {
 			console.log('App Launch')
 			getSystemInfo()
+			// uni.switchTab({
+			// 	url: '/pages/index/index'
+			// });
 		},
 		onShow: function() {
 			console.log('App Show')
