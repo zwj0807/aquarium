@@ -78,6 +78,33 @@
 				}
 			}
 		]
+	},{
+		"root": "group", //子包的根目录
+		"pages": [{ //这里的配置路径和pages里的一样
+				"path": "groupmanage", //配置页面路径，这里要注意，因为root已经选中了文件夹，所以我们只要填写文件名就好
+				"style": {
+					"navigationBarTitleText": "分组管理",
+					"enablePullDownRefresh": true,
+					"navigationBarBackgroundColor":"#FFF"
+				}
+			},
+			{ //这里的配置路径和pages里的一样
+				"path": "addGroupOne", //配置页面路径，这里要注意，因为root已经选中了文件夹，所以我们只要填写文件名就好
+				"style": {
+					"navigationBarTitleText": "增加设备分组",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor":"#FFF"
+				}
+			},
+			{ //这里的配置路径和pages里的一样
+				"path": "addGroupTwo", //配置页面路径，这里要注意，因为root已经选中了文件夹，所以我们只要填写文件名就好
+				"style": {
+					"navigationBarTitleText": "增加设备分组",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor":"#FFF"
+				}
+			}
+		]
 	}
 	],
 		

@@ -49,14 +49,14 @@
 		<view class="group">
 			<u-popup :show="groupShow" round="15" mode="center" :safeAreaInsetBottom="false" style="bottom: 1050rpx !important;" >
 				<view class="group_box">
-					<view style="background-color: #F6F7F9;" v-for="(item,index) in groupList" :key="index">
+					<view style="background-color: #F6F7F9;" v-for="(item,index) in groupList" :key="index" @click="chooseGroup">
 						<view  v-if="index >= 1" class="group_line"></view>
 						<view class="group_item">
 							<image style="width: 32rpx;height: 36rpx;" src="/static/home/group_icon.png" v-if="homeText ==item.name"></image>
 							<view class="group_text_checked" :class="{'group_text':homeText !==item.name}">{{item.name}}</view>
 						</view>
 					</view>
-					<view class="group_set">
+					<view class="group_set" @click="groupSet">
 						<view class="set_text">分组管理</view>
 						<image style="width: 32rpx;height: 32rpx;margin-left: 413rpx;" src="/static/home/group_set.png"></image>
 					</view>
@@ -133,6 +133,15 @@
 			},
 			adClose(){
 				this.adShow=false
+			},
+			chooseGroup(){
+				this.groupShow=false
+			},
+			groupSet(){
+				this.groupShow=false
+				uni.navigateTo({
+					url:'/group/groupmanage'
+				})
 			}
 		}
 	}
@@ -310,9 +319,12 @@
 	}
 }
 .group{
-	// /deep/.u-fade-zoom-enter-active.data-v-39e33bf2, .u-fade-zoom-leave-active.data-v-39e33bf2{
-	// 	bottom: 900rpx !important;
-	// }
+	/deep/.u-fade-zoom-enter-active.data-v-39e33bf2, .u-fade-zoom-leave-active.data-v-39e33bf2{
+		bottom: 900rpx !important;
+	}
+	/deep/.data-v-39e33bf2,{
+		transition-property: transform, opacity,bottom, -webkit-transform !important;
+	}
 	.group_box{
 		width: 686rpx;
 		min-height: 218rpx;

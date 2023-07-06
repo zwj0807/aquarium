@@ -18,9 +18,9 @@
 		onLoad() {
 	
 		},
-		computed: {
-			...mapGetters(['systemInfo']),
-		},
+		// computed: {
+		// 	...mapGetters(['systemInfo']),
+		// },
 		methods: {
 			
 		}

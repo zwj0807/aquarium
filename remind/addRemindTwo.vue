@@ -25,17 +25,17 @@
 		<view class="info_box">
 			<u-textarea v-model="textareaValue" placeholder="有需要的话,备注一下吧~" height="200" border="none"></u-textarea>
 		</view>
-		<view class="button">
-			<view class="add_remind">
-				<u-button color="#5596F2"  text="保存" @click="addRemind"></u-button>
-			</view>
-		</view>
+		<bottomBut :text="'保存'" @fun="addRemind"></bottomBut>
 	</view>
 </template>
 
 <script>
 	import { mapGetters } from 'vuex';
+	import bottomBut from '@/components/bottomBut.vue'
 	export default {
+		components: {
+			bottomBut
+		},
 		data() {
 			return {
 				iconList:{
@@ -125,23 +125,9 @@
 			margin-left: 12rpx;
 		}
 	}
-	.button{
-		height: 96rpx;
-		.add_remind{
-			width: calc(100% - 64rpx);
-			height: 96rpx;
-			padding: 0 32rpx;
-			background: #FFFFFF;
-			position: fixed;
-			bottom: 60rpx;
-			left: 0;
-		}
-	}
 }
 /deep/.u-icon__icon.data-v-172979f{
 	font-size: 24rpx !important;
 }
-/deep/.u-button.data-v-3bf2dba7{
-	height: 100% !important;
-}
+
 </style>

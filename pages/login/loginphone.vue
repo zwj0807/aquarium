@@ -30,7 +30,7 @@
 			</view>
 		</view>
 		<view class="submit">
-			<u-button :disabled="subDisabled" color="#5596F2"  type="primary">立即登录</u-button>
+			<u-button :disabled="subDisabled" color="#5596F2"  type="primary" @click="gologin">立即登录</u-button>
 		</view>
 		<view class="agr_bottom">
 			登录即代表您已同意<text>《靓相和用户协议》</text>和<text>《隐私协议》</text>
@@ -108,6 +108,11 @@
 			finish() {
 				this.showTimeDown = true
 			},
+			gologin(){
+				uni.switchTab({
+					url: '/pages/index/index'
+				})
+			}
 		}
 	}
 </script>
