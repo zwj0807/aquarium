@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view class="group">
-			<view class="group_item" :class="{'item_top': index > 0 }" v-for="(item,index) in groupList" :key="index">
+			<view class="group_item" :class="{'item_top': index > 0 }" v-for="(item,index) in groupList" :key="index" @click="groupDetail(item)">
 				<view class="title">{{item.name}}</view>
 				<view class="dev_box">
 					<text>{{item.num}}个设备</text>
@@ -40,6 +40,11 @@
 			addGroup(){
 				uni.navigateTo({
 					url: '/group/addGroupOne'
+				})
+			},
+			groupDetail(item){
+				uni.navigateTo({
+					url: `/group/groupDetail?title=${item.name}`
 				})
 			}
 		}

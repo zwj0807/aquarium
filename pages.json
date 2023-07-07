@@ -103,6 +103,30 @@
 					"enablePullDownRefresh": false,
 					"navigationBarBackgroundColor":"#FFF"
 				}
+			},
+			{ //这里的配置路径和pages里的一样
+				"path": "groupDetail", //配置页面路径，这里要注意，因为root已经选中了文件夹，所以我们只要填写文件名就好
+				"style": {
+					"navigationBarTitleText": "设备",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor":"#FFF"
+				}
+			},
+			{ //这里的配置路径和pages里的一样
+				"path": "changeGroupName", //配置页面路径，这里要注意，因为root已经选中了文件夹，所以我们只要填写文件名就好
+				"style": {
+					"navigationBarTitleText": "修改分组名称",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor":"#FFF"
+				}
+			},
+			{ //这里的配置路径和pages里的一样
+				"path": "enterDev", //配置页面路径，这里要注意，因为root已经选中了文件夹，所以我们只要填写文件名就好
+				"style": {
+					"navigationBarTitleText": "移入设备",
+					"enablePullDownRefresh": false,
+					"navigationBarBackgroundColor":"#FFF"
+				}
 			}
 		]
 	}

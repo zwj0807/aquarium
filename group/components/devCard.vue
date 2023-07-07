@@ -2,7 +2,7 @@
 	<view class="dev_item" :class="{'item_checked':isChecked && checked}">
 		<image class="img" :src="info.img"></image>
 		<view class="txt">{{info.name}}</view>
-		<view class="checked_box">
+		<view class="checked_box" v-if="isChecked">
 			 <u-checkbox size="40rpx"  iconSize="25" shape="circle" activeColor="#5596F2" @change="checkboxChange(info)" :checked="checked"></u-checkbox>
 		</view>
 	</view>
